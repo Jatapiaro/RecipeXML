@@ -14,9 +14,12 @@
 <!ELEMENT recipes (recipe)+>
 
 	<!-- Definition of recipe -->
-	<!ELEMENT recipe (name, calories?, ingredients)>
+	<!ELEMENT recipe (name, calories?, ingredients, instructions)>
 		<!ELEMENT calories (#PCDATA)> <!-- Float -->
 		<!ATTLIST recipe type (entrada|sopa|ensalada|principal|postre|bebida) #REQUIRED>
+		<!ATTLIST recipe preparationTime CDATA #IMPLIED>
+		<!ATTLIST recipe dificulty (principiante|intermedio|avanzado|experto) #IMPLIED>
+
 
 		<!-- Definition of ingredients -->
 		<!ELEMENT ingredients (ingredient+)>
@@ -25,6 +28,10 @@
 			<!ELEMENT ingredient (name, quantity, unit)>
 				<!ELEMENT quantity (#PCDATA)> <!-- Float -->
 				<!ELEMENT unit (#PCDATA)> <!-- String -->
+
+		<!-- Definition of instrucions -->
+		<!ELEMENT instructions (instruction+)>
+			<!ELEMENT instruction (#PCDATA)> <!-- String -->
 
 
 <!ELEMENT name (#PCDATA)> <!-- String (This element is used more than once) -->

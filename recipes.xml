@@ -2,7 +2,7 @@
 <!DOCTYPE recipes SYSTEM "recipes.dtd">
 
 <recipes>
-    <recipe type="bebida">
+    <recipe type="bebida" preparationTime="10 minutos" dificulty="principiante">
         <name>Sopa de Perro</name>
         <ingredients>
             <ingredient>
@@ -11,5 +11,8 @@
                 <unit>Bulldog</unit>
             </ingredient>
         </ingredients>
+        <instructions>
+          <instruction>s</instruction>
+        </instructions>
     </recipe>
 </recipes>
