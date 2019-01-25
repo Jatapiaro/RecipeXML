@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipes SYSTEM "recipes.dtd">
+
+<recipes>
+    <recipe type="bebida">
+        <name>Sopa de Perro</name>
+        <ingredients>
+            <ingredient>
+                <name>Perro</name>
+                <quantity>1</quantity>
+                <unit>Bulldog</unit>
+            </ingredient>
+        </ingredients>
+    </recipe>
+</recipes>
