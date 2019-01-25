@@ -2,12 +2,6 @@
 	Made by Jacobo Tapia / UNIR
   	VERSION 1.0
   	24/01/2019
-
-  	Log:
-  	1. At some point I tought about use the ingredient unit as an attribute
- 	to have a fixes list of options, but the options could be a lot; from "a cucharada"
- 	to "al gusto"
-
 -->
 
 <!-- Definition of recipes -->
@@ -25,8 +19,8 @@
 		<!ELEMENT ingredients (ingredient+)>
 
 			<!-- Definition of ingredient-->
-			<!ELEMENT ingredient (name, quantity, unit)>
-				<!ELEMENT quantity (#PCDATA)> <!-- Float -->
+			<!ELEMENT ingredient (name, quantity, unit?)>
+				<!ELEMENT quantity (#PCDATA)> <!-- String -->
 				<!ELEMENT unit (#PCDATA)> <!-- String -->
 
 		<!-- Definition of instrucions -->

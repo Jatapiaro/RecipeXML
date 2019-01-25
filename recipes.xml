@@ -1,18 +1,289 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML of recipes
+    Made by Jacobo Tapia / UNIR
+    VERSION 1.0
+    24/01/2019
+-->
+
+<!-- Declaration of the external DTD with recipes as root-->
 <!DOCTYPE recipes SYSTEM "recipes.dtd">
 
 <recipes>
-    <recipe type="bebida" preparationTime="10 minutos" dificulty="principiante">
-        <name>Sopa de Perro</name>
+
+    <!-- Recipe A -->
+    <recipe type="bebida" preparationTime="5 minutos" dificulty="principiante">
+
+        <name>Carajillo</name>
+
+        <!-- List of ingredients -->
         <ingredients>
+
             <ingredient>
-                <name>Perro</name>
+                <name>Café Expreso</name>
                 <quantity>1</quantity>
-                <unit>Bulldog</unit>
+                <unit>Taza</unit>
             </ingredient>
+
+            <ingredient>
+                <name>Azucar</name>
+                <quantity>Al gusto</quantity>
+            </ingredient>
+
+            <ingredient>
+                <name>Licor del 43</name>
+                <quantity>50</quantity>
+                <unit>Mililitros</unit>
+            </ingredient>  
+
+            <ingredient>
+                <name>Cubos de hielo</name>
+                <quantity>2</quantity>
+            </ingredient>                        
+
         </ingredients>
+
+        <!-- Instrucciones -->
         <instructions>
-          <instruction>s</instruction>
+            <instruction>
+                Llena una copa hasta la mitad con cubos de hielo y vierte el Licor del 43
+            </instruction>
+            <instruction>
+                Sirve la copa junto al café expreso y antes de beberlo, viertelo sobre el licor y remueve
+            </instruction>
         </instructions>
+
     </recipe>
+
+    <!-- Recipe B -->
+    <recipe type="sopa" preparationTime="5 minutos" dificulty="intermedio">
+
+        <name>Pho Bo</name>
+
+        <!-- List of ingredients -->
+        <ingredients>
+
+            <ingredient>
+                <name>Agua</name>
+                <quantity>2.5</quantity>
+                <unit>litros</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>Huesos de ternera</name>
+                <quantity>1</quantity>
+                <unit>kilo</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>Morcillo de ternera</name>
+                <quantity>300</quantity>
+                <unit>gramos</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>Chalotas</name>
+                <quantity>4</quantity>
+            </ingredient>
+
+            <ingredient>
+                <name>Cebolla grande</name>
+                <quantity>1</quantity>
+            </ingredient>                                 
+
+            <ingredient>
+                <name>Trozo de jengibre</name>
+                <quantity>1</quantity>
+            </ingredient>
+
+            <ingredient>
+                <name>Salsa de pescado</name>
+                <quantity>5</quantity>
+                <unit>cucharadas</unit>
+            </ingredient> 
+
+            <ingredient>
+                <name>Sal</name>
+                <quantity>1/2</quantity>
+                <unit>cucharada</unit>
+            </ingredient>  
+
+            <ingredient>
+                <name>Azúcar</name>
+                <quantity>1</quantity>
+                <unit>cucharada</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>Azúcar</name>
+                <quantity>1</quantity>
+                <unit>cucharada</unit>
+            </ingredient>  
+
+            <ingredient>
+                <name>Anis estrellado</name>
+                <quantity>5</quantity>
+                <unit>unidades</unit>
+            </ingredient> 
+
+            <ingredient>
+                <name>Ramas de canela</name>
+                <quantity>2</quantity>
+            </ingredient> 
+
+            <ingredient>
+                <name>Clavos de olor</name>
+                <quantity>5</quantity>
+            </ingredient>                                                                   
+
+            <ingredient>
+                <name>Cardomo negro</name>
+                <quantity>1</quantity>
+            </ingredient>                                                               
+
+            <ingredient>
+                <name>Semillas de cilantro</name>
+                <quantity>1/2</quantity>
+                <unit>cucharada</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>Semillas de hinojo</name>
+                <quantity>1/2</quantity>
+                <unit>cucharada</unit>
+            </ingredient>            
+
+            <ingredient>
+                <name>Tallarines de arroz</name>
+                <quantity>400</quantity>
+                <unit>gramos</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>Carne de ternera</name>
+                <quantity>200</quantity>
+                <unit>gramos</unit>
+            </ingredient>
+            
+            <ingredient>
+                <name>Cebolla</name>
+                <quantity>1</quantity>
+            </ingredient>
+
+            <ingredient>
+                <name>Cebolletas</name>
+                <quantity>2</quantity>
+            </ingredient>            
+            
+            <ingredient>
+                <name>Cilantro</name>
+                <quantity>10</quantity>
+                <unit>gramos</unit>
+            </ingredient>            
+
+        </ingredients>
+
+        <!-- Instrucciones -->
+        <instructions>
+            <instruction>
+                Hidratar los tallarines de arroz al menos durante 1 hora.
+            </instruction>
+            <instruction>
+                Cocinar al grill la cebolla, chalota, jengibre, canela y anís estrellado. Con la ayuda de un cuchillo quitar las partes más quemadas dejando un poquito. Reservar para luego.
+            </instruction>
+            <instruction>
+                Tostar las especias. Ponerlas en una bolsita de infusión y reservar para luego.
+            </instruction>
+            <instruction>
+                Hervir los huesos y el morcillo, cuando rompa a hervir esperar 5 minutos y tirar el agua. Limpiar bien los huesos y la carne.
+            </instruction>
+            <instruction>
+                En una olla grande poner los huesos y la carne limpios, la cebolla y el jengibre. Añadir 2.5 litros de agua y cocinar a fuego lento sin que hierva durante 1 hora.
+            </instruction>
+            <instruction>
+                Quitar las grasas e impurezas cuando aparezcan.
+            </instruction>
+            <instruction>
+                Pasado este tiempo, añadir las chalotas, la bolsita con las especias, la sal, la salsa de pescado y el azúcar. Remover y dejar cocinar otras 2 horas más.
+            </instruction>
+            <instruction>
+                Pasadas las 2 horas, retirar la carne y la dejarla enfriar completamente en un bol con agua, para evitar que se oscurezca. Cuando la carne esté completamente enfriada, cortarla con cuidado ya que se rompe fácilmente.
+            </instruction>
+            <instruction>
+                Mientras tanto vamos a preparar el resto de ingredientes: cortar la cebolla en juliana fina, separar la parte blanca de la cebolleta y picar la parte verde junto al cilantro, cortar en juliana la parte blanca de la cebolleta y cortar la ternera finamente.
+            </instruction>
+            <instruction>
+                Para preparar el bol: coger una ración de tallarines de arroz y escaldar en agua hirviendo durante 15 segundos. Luego ponerlos en el bol. Colocar las carnes encima. La carne fresca se puede cocinar de dos formas, directamente en el bol, al añadir la sopa caliente, se terminará de hacer o podemos escaldarla previamente en la olla de la sopa.
+            </instruction>
+            <instruction>
+                Completar con cebolleta, cebolla, cilantro y finalmente añadir una buena cantidad de sopa. Terminar con un toque de pimienta negra por encima y lista para servir.
+            </instruction>
+            <instruction>
+                Acompañar con salsa Hoisin y salsa  Sriracha, también con brotes de soja, albahaca tailandesa, culantro y unos gajos de lima.
+            </instruction>
+        </instructions>
+
+    </recipe>
+
+    <!-- Recipe C -->
+    <recipe type="principal" preparationTime="5 minutos" dificulty="principiante">
+
+        <name>Hamburguesa</name>
+
+        <!-- List of ingredients -->
+        <ingredients>
+
+            <ingredient>
+                <name>carne picada de res</name>
+                <quantity>250</quantity>
+                <unit>gramos</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>carne picada de cerdo</name>
+                <quantity>250</quantity>
+                <unit>gramos</unit>
+            </ingredient>
+
+            <ingredient>
+                <name>Huevos</name>
+                <quantity>2</quantity>
+            </ingredient>
+
+            <ingredient>
+                <name>Mostaza</name>
+                <quantity>1</quantity>
+                <unit>cucharada</unit>
+            </ingredient>  
+
+            <ingredient>
+                <name>Dientes de ajo picado y pasado al sartén</name>
+                <quantity>2</quantity>
+            </ingredient>
+
+            <ingredient>
+                <name>Cebolla picada y pasada al sartén</name>
+                <quantity>1/4</quantity>
+            </ingredient>                                    
+
+        </ingredients>
+
+        <!-- Instrucciones -->
+        <instructions>
+            <instruction>
+                En un bol mezclamos los ingredientes de las hamburguesas caseras. Los huevos, les darán un toque de cremosidad extra mientras que el pan rallado que, como ves es poca cantidad para que mantengan dicha cremosidad, darán un toquecito de crujir. El ajo y la cebolla, las pocho previamente, para que no tenga un sabor demasiado salvaje aunque, si lo prefieres, puedes añadirlo en crudo. Mezclamos con las manos limpias
+            </instruction>
+            <instruction>
+                Ahora dividimos la masa e 4 porciones iguales. Las amasamos una a una, pasándola rápidamente de una mano a otra (así, logramos que se desarrolle la proteína de la carne, evitando que la hamburguesa se deshaga durante la cocción) y después, las aplastamos un poco, dándole la forma de hamburguesa
+            </instruction>
+            <instruction>
+                Las cocinamos. En una sartén antiadherente, ponemos tan solo una gotita de aceite, a fuego medio y colocamos sobre ella las hamburguesas. El tiempo exacto de cocción dependerá del punto deseado de la carne. Si la queremos poco hecha, con 3 minutos por cada una de sus caras será suficiente. Si la queremos más hecha, el doble de tiempo. Cuando le demos la vuelta, ponemos una loncha de queso encima de la hamburguesa, para que se vaya fundiendo.
+            </instruction>
+            <instruction>
+                Una vez hechas, montamos las hamburguesas. Ponemos en el pan, al cual previamente lo hemos pasado un poco por la sartén para que esté caliente, una base de lechuga y encima una rodaja de tomate. Encima colocamos las hamburguesas caseras con la loncha de queso y encima, unos aros de cebolla. Terminamos aderezando con nuestra salsa favorita.
+            </instruction>
+        </instructions>
+
+    </recipe>
+
 </recipes>
