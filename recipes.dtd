@@ -1,26 +1,27 @@
 <!-- DTD to write coucine recipes
 	Made by Jacobo Tapia / UNIR
-  	VERSION 1.0
-  	24/01/2019
+    VERSION 1.5
+    30/01/2019
 -->
 
 <!-- Definition of recipes -->
 <!ELEMENT recipes (recipe)+>
 
 	<!-- Definition of recipe -->
-	<!ELEMENT recipe (name, origin, preparationTime, calories?, typeOfDish, utensils, ingredients, instructions)>
+	<!ELEMENT recipe (name, origin, preparationTime, calories?, servedIn, utensils, ingredients, instructions)>
 
 		<!ELEMENT origin (#PCDATA)>
 		<!ELEMENT preparationTime (#PCDATA)>
+			<!ATTLIST preparationTime unit (segundos|minutos|horas|días) #REQUIRED>
 		<!ELEMENT calories (#PCDATA)>
-		<!ELEMENT typeOfDish (#PCDATA)>
+		<!ELEMENT servedIn (#PCDATA)> <!-- Type of dish in which the recipe is served -->
 
 		<!ATTLIST recipe type (entrada|sopa|ensalada|principal|postre|bebida) #REQUIRED>
-		<!ATTLIST recipe dificulty (Facil, Medio, Difícil, Muy Díficil) #REQUIRED>
+		<!ATTLIST recipe dificulty (fácil|medio|difícil) #REQUIRED>
 
 		<!-- Definition of utensils -->
 		<!ELEMENT utensils (utensil+)>
-			<!ELEMENT utensil (#PCDATA)>
+			<!ELEMENT utensil (name, quantity)>
 
 
 		<!-- Definition of ingredients -->
@@ -28,12 +29,12 @@
 
 			<!-- Definition of ingredient-->
 			<!ELEMENT ingredient (name, quantity, unit?)>
-				<!ELEMENT quantity (#PCDATA)>
 				<!ELEMENT unit (#PCDATA)>
 
 		<!-- Definition of instrucions -->
 		<!ELEMENT instructions (instruction+)>
 			<!ELEMENT instruction (#PCDATA)>
 
-
-<!ELEMENT name (#PCDATA)> <!-- String (This element is used more than once) -->
+<!-- These element are used more than once -->
+<!ELEMENT name (#PCDATA)> 
+<!ELEMENT quantity (#PCDATA)>

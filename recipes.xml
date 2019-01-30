@@ -2,8 +2,8 @@
 
 <!-- XML of recipes
     Made by Jacobo Tapia / UNIR
-    VERSION 1.0
-    24/01/2019
+    VERSION 1.5
+    30/01/2019
 -->
 
 <!-- Declaration of the external DTD with recipes as root-->
@@ -12,9 +12,28 @@
 <recipes>
 
     <!-- Recipe A -->
-    <recipe type="bebida" preparationTime="5 minutos" dificulty="principiante">
+    <recipe type="bebida" dificulty="fácil">
 
         <name>Carajillo</name>
+        <origin>Caja de una botella de licor</origin>
+        <preparationTime unit="minutos">5</preparationTime>
+        <servedIn>Copa de vidrio</servedIn>
+
+        <!-- List of utensils -->
+        <utensils>
+            <utensil>
+                <name>Medidor de licor</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Copa de vidrio</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Cuchara</name>
+                <quantity>1</quantity>
+            </utensil>
+        </utensils>
 
         <!-- List of ingredients -->
         <ingredients>
@@ -56,9 +75,33 @@
     </recipe>
 
     <!-- Recipe B -->
-    <recipe type="sopa" preparationTime="5 minutos" dificulty="intermedio">
+    <recipe type="sopa" dificulty="difícil">
 
         <name>Pho Bo</name>
+        <origin>Recetas Vietnamitas</origin>
+        <preparationTime unit="horas">3</preparationTime>
+        <calories>274</calories>
+        <servedIn>Bowl hondo</servedIn>
+
+        <!-- List of utensils -->
+        <utensils>
+            <utensil>
+                <name>Sartén</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Cuchillo</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Bolsa de infusión</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Ollas de aluminio</name>
+                <quantity>3</quantity>
+            </utensil>
+        </utensils>
 
         <!-- List of ingredients -->
         <ingredients>
@@ -226,9 +269,33 @@
     </recipe>
 
     <!-- Recipe C -->
-    <recipe type="principal" preparationTime="5 minutos" dificulty="principiante">
+    <recipe type="principal" dificulty="medio">
 
         <name>Hamburguesa</name>
+        <origin>Desconocido</origin>
+        <preparationTime unit="minutos">45</preparationTime>
+        <servedIn>Plato extendido</servedIn>
+
+        <!-- List of utensils -->
+        <utensils>
+            <utensil>
+                <name>Parrilla</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Cuchillo</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Espatula</name>
+                <quantity>1</quantity>
+            </utensil>
+            <utensil>
+                <name>Tablilla para cuchillo</name>
+                <quantity>1</quantity>
+            </utensil>
+        </utensils>
+
 
         <!-- List of ingredients -->
         <ingredients>
@@ -264,6 +331,16 @@
             <ingredient>
                 <name>Cebolla picada y pasada al sartén</name>
                 <quantity>1/4</quantity>
+            </ingredient>  
+
+            <ingredient>
+                <name>Pan para hamburgesa</name>
+                <quantity>1</quantity>
+            </ingredient>  
+
+            <ingredient>
+                <name>Lechuga</name>
+                <quantity>1</quantity>
             </ingredient>                                    
 
         </ingredients>
