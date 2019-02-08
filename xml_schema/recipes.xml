@@ -8,7 +8,7 @@
 
 <recipes 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="recipes.xsd" lenguage="es-ES">
+	xsi:noNamespaceSchemaLocation="recipes.xsd">
 
     <!-- Recipe A -->
     <recipe type="bebida" dificulty="fácil">
