@@ -1,1 +1,1 @@
-			<xs:element name="name" type="xs:string" />
+https://stackoverflow.com/questions/8925706/xml-schema-how-to-restrict-attribute-by-enumeration
