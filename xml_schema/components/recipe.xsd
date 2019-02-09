@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xs:include schemaLocation="utensils.xsd"/>
-	<xs:include schemaLocation="ingredients.xsd"/>
+	<xs:include schemaLocation="./utensils/utensils.xsd"/>
+	<xs:include schemaLocation="./ingredients/ingredients.xsd"/>
+	<xs:include schemaLocation="./enumerators/time.xsd"/>
+	<xs:include schemaLocation="./enumerators/type.xsd"/>
+	<xs:include schemaLocation="./enumerators/dificulty.xsd"/>
 	<xs:include schemaLocation="instructions.xsd"/>
-
-	<xs:simpleType name="time">
-	  <xs:restriction base="xs:string">
-	  	<xs:enumeration value="segundos" />
-	    <xs:enumeration value="minutos" />
-	    <xs:enumeration value="horas" />
-	    <xs:enumeration value="días" /> 
-	  </xs:restriction>
-	</xs:simpleType>
 
 	<xs:complexType name="recipe">
 
-		<xs:sequence>
+		<xs:all>
 			
 			<xs:element name="name" type="xs:string" />
 			<xs:element name="origin" type="xs:string" />
@@ -39,10 +33,10 @@
 
 
 
-		</xs:sequence>
+		</xs:all>
 
-		<xs:attribute name="type" use="required"/>
-		<xs:attribute name="dificulty" use="required"/>
+		<xs:attribute name="type" type="type" use="required"/>
+		<xs:attribute name="dificulty" type="dificulty" use="required"/>
 
    	</xs:complexType>
 

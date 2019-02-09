@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:simpleType name="type">
+	  <xs:restriction base="xs:string">
+	  	<xs:enumeration value="entrada" />
+	    <xs:enumeration value="sopa" />
+	    <xs:enumeration value="ensalada" />
+	    <xs:enumeration value="principal" />
+	    <xs:enumeration value="postre" />
+	    <xs:enumeration value="bebida" />
+	  </xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>
+
