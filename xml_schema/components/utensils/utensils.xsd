@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+	<xs:annotation>
+		<xs:appinfo>Utensils</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines the utensils element. It extends the utensil element
+			defined in ./utensil.xsd. Then it just defined how the utensils element is composed by many utensil elements.
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
+
 	<xs:include schemaLocation="utensil.xsd"/>
 
 	<xs:complexType name="utensils">

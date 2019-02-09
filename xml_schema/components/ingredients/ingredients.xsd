@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+	<xs:annotation>
+		<xs:appinfo>Ingredients</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines the ingredients element. It extends the ingredient element
+			defined in ./ingredient.xsd. Then it just defined how the ingredients element is composed by many ingredient elements.
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
+
 	<xs:include schemaLocation="ingredient.xsd"/>
 
 	<xs:complexType name="ingredients">

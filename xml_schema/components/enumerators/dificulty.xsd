@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:annotation>
+		<xs:appinfo>Dificulty (Enumerator)</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines an enumerator for the dificulty attribute of a recipe.
+			It has three options: (fácil|medio|difícil). The type of the enumerator is an string.
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
 	
 	<xs:simpleType name="dificulty">
 	  <xs:restriction base="xs:string">

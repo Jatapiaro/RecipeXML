@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+	<xs:annotation>
+		<xs:appinfo>Component</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines the component element. This component can be
+			extended. It contains to elemens of type string (name, quantity).
+			Altough the quantity could be a nonNegativeInteger, in some cases
+			the quantity could be something like "Al gusto".
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
+
 	<xs:complexType name="component">
 		<xs:sequence>
 			<xs:element name="name" type="xs:string"/>

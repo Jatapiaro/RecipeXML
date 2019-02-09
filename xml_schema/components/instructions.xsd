@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+	<xs:annotation>
+		<xs:appinfo>Instructions</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines the instructions element. This element is composed by many simple elements of type string named as instruction.
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
+
 	<xs:complexType name="instructions">
 		<xs:sequence>
 			<xs:element name="instruction" type="xs:string" minOccurs="1" maxOccurs="unbounded" />

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+	<xs:annotation>
+		<xs:appinfo>Ingredient</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines the ingredient element. It includes the component element
+			defined in ./../base/component.xsd. Also during the extension of the component; it added another element called unit to defined the measure of the quantity that we must use of this ingredient
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
+
 	<xs:include schemaLocation="./../base/component.xsd"/>
 	
 	<xs:complexType name="ingredient">

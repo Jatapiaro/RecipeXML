@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:annotation>
+		<xs:appinfo>Recipes</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines the recipes element. This schema defined the root element of the RecipeXML lang.
+			It is formed by many elements of type recipe (defined in ./components/recipe.xsd).
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
 	
 	<xs:include schemaLocation="./components/recipe.xsd"/>
 

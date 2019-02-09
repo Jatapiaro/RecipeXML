@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xs:include schemaLocation="./utensils/utensils.xsd"/>
-	<xs:include schemaLocation="./ingredients/ingredients.xsd"/>
+	<xs:annotation>
+		<xs:appinfo>Recipe</xs:appinfo>
+		<xs:documentation xml:lang="en">
+			This schema defines the recipe element. This complex element is composed by many other elements that can be in any order. It also include other xml schema definitions of each of their components. The elements of a recipe are the following and can be inside of the element in any order:
+
+			1. name: of the recipe type string
+			2. origin: of the recipe with type string 
+			3. preparationTime: of the recipe with type nonNegativeInteger and a unit attribute with type string
+			4. calories (optional): of the recipe with type nonNegativeInteger
+			5. servedIn: In which type of dish the recipe is going to be served and is defined with a type of string
+			6. utensils: to be used during the preparation of the recipe with type utensils (defined in ./utensils/utensils.xsd)
+			7. ingredients: to be used during the preparation of the recipe with type ingredients (defined in ./ingredients/ingredients.xsd)
+			8. instructions: to be followed during the preparation of the recipe with type instructions (defiend in instructions.xsd)
+
+			The recipe element also contains two attributes:
+			1. type: Type of recipe, it means if it is a soap or even a drink and its type is equal to type (defined in ./enumerators/type.xsd)
+			2. dificulty: How hard is to prepare the recipe and its type is a dificulty enumerator. (defined in ./enumerators/dificulty.xsd)
+			Author: Jacobo Tapia
+		</xs:documentation>
+	</xs:annotation>
+
+
+	<xs:include schemaLocation="./enumerators/dificulty.xsd"/>
 	<xs:include schemaLocation="./enumerators/time.xsd"/>
 	<xs:include schemaLocation="./enumerators/type.xsd"/>
-	<xs:include schemaLocation="./enumerators/dificulty.xsd"/>
+	<xs:include schemaLocation="./ingredients/ingredients.xsd"/>
+	<xs:include schemaLocation="./utensils/utensils.xsd"/>
 	<xs:include schemaLocation="instructions.xsd"/>
 
 	<xs:complexType name="recipe">
