@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xs:include schemaLocation="utensil.xsd"/>
-
-	<xs:complexType name="utensils">
+	<xs:complexType name="instructions">
 		<xs:sequence>
-			<xs:element name="utensil" type="utensil" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="instruction" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
 		</xs:sequence>
    	</xs:complexType>
 

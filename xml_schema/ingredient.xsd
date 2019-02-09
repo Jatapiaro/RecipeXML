@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:include schemaLocation="component.xsd"/>
+	
+	<xs:complexType name="ingredient">
+		<xs:complexContent>
+			<xs:extension base="component">
+				<xs:sequence>
+					<xs:element name="unit" type="xs:string" minOccurs="0" maxOccurs="1" /> 
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+   	</xs:complexType>
+
+</xs:schema>

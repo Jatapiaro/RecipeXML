@@ -2,13 +2,45 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 	<xs:include schemaLocation="utensils.xsd"/>
+	<xs:include schemaLocation="ingredients.xsd"/>
+	<xs:include schemaLocation="instructions.xsd"/>
+
+	<xs:simpleType name="time">
+	  <xs:restriction base="xs:string">
+	    <xs:enumeration value="segundos" />
+	    <xs:enumeration value="minutos" />
+	    <xs:enumeration value="horas" />
+	    <xs:enumeration value="días" /> 
+	  </xs:restriction>
+	</xs:simpleType>
 
 	<xs:complexType name="recipe">
 
 		<xs:sequence>
+			
 			<xs:element name="name" type="xs:string" />
 			<xs:element name="origin" type="xs:string" />
+			<xs:element name="calories" type="xs:nonNegativeInteger" minOccurs="0"/>
+			<xs:element name="servedIn" type="xs:string" />
+
+			<xs:element name="preparationTime" type="xs:nonNegativeInteger" minOccurs="1" maxOccurs="1">
+			    <xs:complexType>
+			        <xs:simpleContent>
+			            <xs:extension base="xs:nonNegativeInteger">
+			            	<xs:attribute name="unit" type="time"/>
+			            </xs:extension>
+			        </xs:simpleContent>
+			    </xs:complexType>
+		    </xs:element>
+
+
+
 			<xs:element name="utensils" type="utensils"/>
+			<xs:element name="ingredients" type="ingredients"/>
+			<xs:element name="instructions" type="instructions"/>
+
+
+
 		</xs:sequence>
 
 		<xs:attribute name="type" use="required"/>

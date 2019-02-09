@@ -4,7 +4,7 @@
 	<xs:complexType name="component">
 		<xs:sequence>
 			<xs:element name="name" type="xs:string"/>
-			<xs:element name="unit" type="xs:nonNegativeInteger"/> 
+			<xs:element name="quantity" type="xs:string"/> 
 		</xs:sequence>
    	</xs:complexType>
 

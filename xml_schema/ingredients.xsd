@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:include schemaLocation="ingredient.xsd"/>
+
+	<xs:complexType name="ingredients">
+		<xs:sequence>
+			<xs:element name="ingredient" type="ingredient" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+   	</xs:complexType>
+
+</xs:schema>
