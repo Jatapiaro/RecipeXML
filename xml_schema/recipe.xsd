@@ -7,7 +7,7 @@
 
 	<xs:simpleType name="time">
 	  <xs:restriction base="xs:string">
-	    <xs:enumeration value="segundos" />
+	  	<xs:enumeration value="segundos" />
 	    <xs:enumeration value="minutos" />
 	    <xs:enumeration value="horas" />
 	    <xs:enumeration value="días" /> 
@@ -20,21 +20,19 @@
 			
 			<xs:element name="name" type="xs:string" />
 			<xs:element name="origin" type="xs:string" />
-			<xs:element name="calories" type="xs:nonNegativeInteger" minOccurs="0"/>
-			<xs:element name="servedIn" type="xs:string" />
 
-			<xs:element name="preparationTime" type="xs:nonNegativeInteger" minOccurs="1" maxOccurs="1">
+			<xs:element name="preparationTime">
 			    <xs:complexType>
 			        <xs:simpleContent>
 			            <xs:extension base="xs:nonNegativeInteger">
-			            	<xs:attribute name="unit" type="time"/>
+			            	<xs:attribute name="unit" type="time" use="required"/>
 			            </xs:extension>
 			        </xs:simpleContent>
 			    </xs:complexType>
 		    </xs:element>
 
-
-
+			<xs:element name="calories" type="xs:nonNegativeInteger" minOccurs="0"/>
+			<xs:element name="servedIn" type="xs:string" />
 			<xs:element name="utensils" type="utensils"/>
 			<xs:element name="ingredients" type="ingredients"/>
 			<xs:element name="instructions" type="instructions"/>

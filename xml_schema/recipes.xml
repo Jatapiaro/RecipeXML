@@ -15,7 +15,7 @@
 
         <name>Carajillo</name>
         <origin>Caja de una botella de licor</origin>
-        <preparationTime unit="mins">5</preparationTime>
+        <preparationTime unit="minutos">5</preparationTime>
         <servedIn>Copa de vidrio</servedIn>
 
         <!-- List of utensils -->
