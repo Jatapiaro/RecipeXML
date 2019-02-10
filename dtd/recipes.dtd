@@ -5,7 +5,7 @@
 -->
 
 <!-- Definition of recipes -->
-<!ELEMENT recipes (recipe)+>
+<!ELEMENT recipes (recipe)*>
 
 	<!-- Definition of recipe -->
 	<!ELEMENT recipe (name, origin, preparationTime, calories?, servedIn, utensils, ingredients, instructions)>
