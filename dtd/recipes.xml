@@ -16,6 +16,8 @@
     <recipe type="bebida" dificulty="fácil">
 
         <name>Carajillo</name>
+        <description>Este combinado, popular en México, mezcla la intensidad y la amargura del café expreso con la especiada dulzura del Licor 43.</description>
+        <image>https://sourmagazine502618856.files.wordpress.com/2018/08/carajillo1.png?w=1200</image>
         <origin>Caja de una botella de licor</origin>
         <preparationTime unit="minutos">5</preparationTime>
         <servedIn>Copa de vidrio</servedIn>
@@ -79,6 +81,8 @@
     <recipe type="sopa" dificulty="difícil">
 
         <name>Pho Bo</name>
+        <description>El Pho, es el plato más típico de la gastronomía de Vietnam, se trata de una sopa clara de noodles o tallarines  de arroz, con carne, brotes de soja y algunas hierbas frescas. Por la calles de Vietnam podemos encontrar cientos de puestecitos de comida callejera que sirven esta sopa “Pho” de noodles para desayunar, comer o cenar.</description>
+        <image>https://i.ytimg.com/vi/MrgdrReEwkM/maxresdefault.jpg</image>
         <origin>Recetas Vietnamitas</origin>
         <preparationTime unit="horas">3</preparationTime>
         <calories>274</calories>
@@ -273,6 +277,8 @@
     <recipe type="principal" dificulty="medio">
 
         <name>Hamburguesa</name>
+        <description>Una hamburguesa es un tipo de sándwich hecho a base de carne molida aglutinada en forma de filete, cocinado a la parrilla o a la plancha, aunque también puede freírse u hornearse. Fuera del ámbito de habla hispana es más común encontrar la denominación inglesa burger. Se presenta en un pan ligero partido en dos que posee una forma de óvalo. Suele estar acompañada de aros de cebolla, hojas de lechuga, alguna rodaja de tomate, láminas de encurtidos, patatas fritas etc. Se suele alinear con algún condimento como puede ser: salsa de tomate, mostaza, relish, mayonesa, etc.</description>
+        <image>http://static.t13.cl/images/sizes/1200x675/1477257744-captura.jpg</image>
         <origin>Desconocido</origin>
         <preparationTime unit="minutos">45</preparationTime>
         <servedIn>Plato extendido</servedIn>
