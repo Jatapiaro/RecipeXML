@@ -7,6 +7,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     Made by Jacobo Tapia / UNIR
     VERSION 1.0
     21/02/2019
+
+    This XSL applies the following sortings:
+    - Recipes in alphabetical oreder
+    - Each of the ingredients ordered in alphabetical order
+    - Each utensil in alphabetical order
 -->
 
 <xsl:template match="/recipes">
@@ -43,6 +48,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
         <div class="container">
             <xsl:for-each select="recipe">
+                <xsl:sort select="name"/>
                 <xsl:apply-templates select="."/>
             </xsl:for-each>
         </div>
@@ -101,6 +107,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <div class="flex-icon"><h4>Ingredientes:&#160;</h4> <img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/1532/1532759.svg"/></div>
                 <ul>
                     <xsl:for-each select="ingredients/ingredient">
+                        <xsl:sort select="name"/>
                         <xsl:apply-templates select="." />
                     </xsl:for-each>
                 </ul>
@@ -110,6 +117,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <div class="flex-icon"><h4>Utensilios:&#160;</h4> <img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/1517/1517575.svg"/></div>
                 <ul>
                     <xsl:for-each select="utensils/utensil">
+                        <xsl:sort select="name"/>
                         <li><xsl:value-of select="quantity" />&#160;-&#160;<xsl:value-of select="name" /></li>
                     </xsl:for-each>
                 </ul>
@@ -148,10 +156,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="ingredient">
     <xsl:choose>
         <xsl:when test="unit">
-            <li><xsl:value-of select="quantity" />&#160;<xsl:value-of select="unit" />&#160;de&#160;<xsl:value-of select="name" /></li>                                        
+            <li><xsl:value-of select="quantity" />&#160;<xsl:value-of select="unit" />&#160;de&#160;<b><xsl:value-of select="name" /></b></li>                                        
         </xsl:when>
         <xsl:otherwise>
-            <li><xsl:value-of select="name" />&#160;-&#160;<xsl:value-of select="quantity" /></li>
+            <li><b><xsl:value-of select="name" /></b>&#160;-&#160;<xsl:value-of select="quantity" /></li>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
