@@ -71,7 +71,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         </div>
                     </div>
                     
-                    <img style="width: 100%; max-height: 320px;" class="card-img-top img-fluid" src="http://significadosdelossuenos.net/wp-content/uploads/2017/05/Qu%C3%A9-significa-so%C3%B1ar-con-hamburguesa.jpg" alt="Card image cap" />
+                    <img 
+                        style="width: 100%; max-height: 320px;"
+                        class="card-img-top img-fluid">
+                        <xsl:attribute name="src">
+                            <xsl:value-of select="image" />
+                        </xsl:attribute>
+                    </img>
                     
                     <div class="card-body">
 
@@ -114,6 +120,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
                     <div class="card-footer">
                         <h4>Datos adicionales: </h4>
+                        <xsl:if test="calories">
+                            <br />
+                            <div class="flex-icon"><img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/1350/1350083.svg"/>&#160;<b>Calorias:</b>&#160;<xsl:value-of select="calories" />&#160;kcal</div>
+                        </xsl:if>
                         <br />
                         <div class="flex-icon"><img class="icon" src="https://image.flaticon.com/icons/svg/148/148933.svg"/>&#160;<b>Tiempo estimado de preparación:</b>&#160;<xsl:value-of select="preparationTime" />&#160;<xsl:value-of select="preparationTime/@unit"/></div>
                         <br />
