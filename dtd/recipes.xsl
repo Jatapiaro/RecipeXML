@@ -54,7 +54,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <!-- recipe template -->
 <xsl:template match="recipe">
-    <div class="card mb-3">
+    <div class="card mb-3 border-info">
 
         <div class="card-header">
             <h4 class="float-left"><xsl:value-of select="name" /></h4>
@@ -110,7 +110,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <div class="flex-icon"><h4>Utensilios:&#160;</h4> <img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/1517/1517575.svg"/></div>
                 <ul>
                     <xsl:for-each select="utensils/utensil">
-                        <li><xsl:value-of select="quantity" />&#160;-&#160;<xsl:value-of select="name" /></li>
+                        <li><xsl:value-of select="quantity" />&#160;-&#160;<b><xsl:value-of select="name" /></b></li>
                     </xsl:for-each>
                 </ul>
             </div>
@@ -148,10 +148,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="ingredient">
     <xsl:choose>
         <xsl:when test="unit">
-            <li><xsl:value-of select="quantity" />&#160;<xsl:value-of select="unit" />&#160;de&#160;<xsl:value-of select="name" /></li>                                        
+            <li><xsl:value-of select="quantity" />&#160;<xsl:value-of select="unit" />&#160;de&#160;<b><xsl:value-of select="name" /></b></li>                                        
         </xsl:when>
         <xsl:otherwise>
-            <li><xsl:value-of select="name" />&#160;-&#160;<xsl:value-of select="quantity" /></li>
+            <li><b><xsl:value-of select="name" /></b>&#160;-&#160;<xsl:value-of select="quantity" /></li>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>

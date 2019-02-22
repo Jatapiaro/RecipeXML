@@ -60,7 +60,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <!-- recipe template -->
 <xsl:template match="recipe">
-    <div class="card mb-3">
+    <div class="card mb-3 border-info">
 
         <div class="card-header">
             <h4 class="float-left"><xsl:value-of select="name" /></h4>
