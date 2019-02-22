@@ -35,6 +35,8 @@
 		<xs:all>
 			
 			<xs:element name="name" type="xs:string" />
+			<xs:element name="description" type="xs:string" />
+			<xs:element name="image" type="xs:string" />
 			<xs:element name="origin" type="xs:string" />
 
 			<xs:element name="preparationTime">

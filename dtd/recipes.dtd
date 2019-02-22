@@ -8,8 +8,10 @@
 <!ELEMENT recipes (recipe)*>
 
 	<!-- Definition of recipe -->
-	<!ELEMENT recipe (name, origin, preparationTime, calories?, servedIn, utensils, ingredients, instructions)>
+	<!ELEMENT recipe (name, description, image, origin, preparationTime, calories?, servedIn, utensils, ingredients, instructions)>
 
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT image (#PCDATA)>
 		<!ELEMENT origin (#PCDATA)>
 		<!ELEMENT preparationTime (#PCDATA)>
 			<!ATTLIST preparationTime unit (segundos|minutos|horas|días) #REQUIRED>
