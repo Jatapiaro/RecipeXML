@@ -35,6 +35,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 justify-content: space-between;
                 flex-wrap: wrap;
             }
+            .description-text {
+                font-size: 1.5rem;
+            }            
+            .description-text > span {
+                font-size: 1rem;
+            }
         </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     </head>
@@ -97,6 +103,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         
         <div class="card-body">
 
+            <p class="description-text"><b>Descripción:</b>&#160;<span><xsl:apply-templates select="description" /></span></p>
+
             <div>
                 <div class="flex-icon"><h4>Ingredientes:&#160;</h4> <img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/1532/1532759.svg"/></div>
                 <ul>
@@ -124,7 +132,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 </ul>
             </div>
 
-
         </div>
 
         <div class="card-footer">
@@ -138,7 +145,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <br />
             <div class="flex-icon"><img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/938/938442.svg"/>&#160;<b>Dificultad de preparación: &#160;</b><xsl:value-of select="@dificulty"/></div>
             <br />
-            <div class="flex-icon"><img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/1143/1143124.svg"/>&#160;<b>Se recomienda servir en: &#160;</b><xsl:value-of select="servedIn"/></div>                        
+            <div class="flex-icon"><img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/1143/1143124.svg"/>&#160;<b>Se recomienda servir en: &#160;</b><xsl:value-of select="servedIn"/></div>
+            <br />
+            <div class="flex-icon"><img class="icon" src="https://www.flaticon.com/premium-icon/icons/svg/295/295268.svg"/>&#160;<b>Hemos extraido esta receta de: &#160;</b><xsl:value-of select="origin"/></div>
         </div>
     </div>
 </xsl:template>
